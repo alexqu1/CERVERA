@@ -1,0 +1,915 @@
+@font-face {
+  font-family: RobotoPc;
+  src: url(../fonts/Roboto-Light.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: RobotoPc;
+  scroll-behavior: smooth;
+}
+
+
+
+/* contenedor para central*/
+.contenedorCentral {
+  width: 100%;
+  position: relative;
+  margin: 0px auto;
+}
+
+/*Fin  contenedor */
+
+/* contenedor */
+#contenedor {
+  width: 100%;
+  min-height: 600px;
+
+
+}
+
+/*Fin  contenedor */
+
+#ancla {
+  position: fixed;
+  right: 80px;
+  bottom: 15px;
+  z-index: 2;
+
+}
+
+#ancla img {
+  width: 40px;
+  height: 40px;
+
+}
+
+/* nav y menu */
+header {
+  width: 100%;
+
+
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: black;
+}
+
+.logo {
+  width: 50px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.contenedorLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+#menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: bold;
+
+  width: 100%;
+}
+
+#menu li:hover {
+  background-color: black;
+  transition: 1s;
+}
+
+
+#iconomenu {
+  display: none;
+
+}
+
+#iconoCerrarMenu {
+  display: none;
+
+}
+
+
+
+#menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.submenu {
+  display: none;
+
+}
+
+#menu li:hover .uve {
+  color: rgb(255, 255, 255);
+}
+
+.uve {
+  font-size: 14px;
+  font-weight: 800;
+
+  color: rgb(0, 0, 0);
+}
+
+
+
+#menu li {
+  background-color: rgb(0, 174, 255);
+  color: white;
+  list-style: none;
+  padding: 10px 12px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  width: 40%;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+
+
+
+.highMenu:hover .submenu {
+  display: block;
+  position: absolute;
+
+  width: 62%;
+  left: 316px;
+  top: 180px;
+
+}
+
+/*pie*/
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(0, 174, 255);
+
+  min-height: 200px;
+
+}
+
+footer h2 {
+  margin-bottom: 10px;
+}
+
+.conjuntoRedes {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footerder {
+  margin-bottom: 30px;
+}
+
+/* fin pie */
+
+
+/* ---------------------------------- */
+/*PAGINA-INICIO*/
+
+#texto1inicio {
+  display: flex;
+  text-align: center;
+
+}
+
+.subtituloInicio {
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+#texto2inicio {
+  display: flex;
+  min-height: 500px;
+  align-items: center;
+  background-color: rgb(0, 174, 255);
+
+  width: 100%;
+
+}
+
+.izqInicio {
+  width: 25%;
+  border-radius: 0px 10px 10px 0px;
+  height: 400px;
+  background: url(../img/inicio/inicio1.jpg);
+  background-size: cover;
+
+}
+
+.derInicio {
+  width: 70%;
+
+  margin-left: 50px;
+}
+
+.derInicio h2 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#texto3inicio {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 500px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.izqInicio2 {
+  width: 70%;
+  min-height: 380px;
+  padding-left: 30px;
+
+}
+
+.izqInicio2 h2 {
+  margin-bottom: 10px;
+}
+
+.izqInicio2 li {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.derInicio2 {
+  width: 25%;
+  height: 400px;
+  background: url(../img/inicio/Alcalde.jpeg);
+  background-size: cover;
+
+  border-radius: 10px 0px 0px 10px;
+}
+
+/*FIN PAGINA-INICIO */
+
+/* servicios Religiosos */
+
+
+
+/* PATRONES*/
+#texto2Patrones {
+  display: flex;
+  min-height: 500px;
+  align-items: center;
+  background-color: rgb(0, 174, 255);
+
+  width: 100%;
+
+}
+
+.izqPatrones {
+  width: 25%;
+  border-radius: 0px 10px 10px 0px;
+  height: 400px;
+  background: url(../img/Patrones/SanBlas.jpg);
+  background-size: cover;
+
+}
+
+.derPatrones {
+  width: 70%;
+
+  margin-left: 50px;
+}
+
+.derPatrones h2 {
+
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+#texto3Patrones {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 500px;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.izqPatrones2 {
+  width: 70%;
+  min-height: 380px;
+  padding-left: 30px;
+
+
+}
+
+.izqPatrones2 h2 {
+  margin-bottom: 10px;
+}
+
+.izqPatrones2 li {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.derPatrones2 {
+  width: 25%;
+  height: 400px;
+  background: url(../img/Patrones/SanRoque.jpg);
+  background-size: cover;
+
+  border-radius: 10px 0px 0px 10px;
+}
+
+
+/* piscina */
+#contenedorPiscina {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textPiscina {
+  width: 40%;
+
+  margin-left: 20px;
+}
+
+.textPiscina li {
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+
+/* slider */
+.slideshow-container {
+  max-width: 100%;
+  height: 500px;
+
+}
+
+.mySlides {
+  display: none;
+
+  height: 400px;
+
+}
+
+
+.mySlides img {
+  width: 800px;
+  height: 500px;
+}
+
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3.5s;
+  animation-name: fade;
+  animation-duration: 3.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* gastronomia */
+#contenedorCartas {
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.cartas .tituloCarta {
+  font-weight: bold;
+
+
+}
+
+
+
+.cartas {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex-direction: column;
+  align-items: center;
+  min-height: 200px;
+  width: 30%;
+
+  border-radius: 10px;
+  border: 1px double rgb(0, 0, 0);
+  background-color: rgba(245, 245, 245, 0.827);
+
+
+
+
+}
+
+
+
+.cartas .imagenCarta {
+  width: 100%;
+  height: 265px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.tituloCarta {
+  margin-top: 20px;
+}
+
+.tituloCarta,
+.descripcionCarta,
+.localizacion {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 30px;
+}
+
+/* ---------------------------------- */
+
+
+/* Pleno */
+#contenedorPleno {
+  width: 100%;
+  min-height: 200px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+
+#contenedorPleno h2 {
+  width: 100%;
+
+  font-size: 35px;
+  letter-spacing: 20px;
+  font-weight: bold;
+  color: rgb(0, 174, 255);
+
+  text-align: left;
+}
+
+.cajaPleno {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid gray;
+  margin-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+.tituloCajaPleno {
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* descarga Formulario */
+
+
+
+/* noticias */
+.cajaTituloNoticia {
+  min-height: 350px;
+  width: 100%;
+  background: url(../img/noticias/noticiasTitulo2.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.cajaTituloNoticia h2 {
+  width: 100%;
+  font-size: 35px;
+  letter-spacing: 20px;
+  font-weight: bold;
+  color: rgb(0, 174, 255);
+  background-color: rgba(0, 0, 0, 0.249);
+  text-align: center;
+  margin-left: 10px
+}
+
+.cajaNoticia {
+  width: 100%;
+  min-height: 200px;
+
+  float: left;
+  display: flex;
+  border-bottom: 1px solid grey;
+  margin-top: 40px;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+
+}
+
+.imagenNoticiaizq img {
+  width: 220px;
+  height: 170px;
+  margin-right: 40px;
+
+}
+
+.fechaNoticia {
+  font-size: 12px;
+  margin-top: 5px;
+  font-weight: bold;
+  font-style: italic
+}
+
+
+/* contacta */
+
+.contenedorContacta {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 200px;
+
+  padding-top: 40px;
+}
+
+.izqContacta {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+
+  margin-bottom: 40px;
+
+}
+
+.izqContacta iframe {
+  margin-top: 20px;
+  width: 100%;
+  min-height: 470px;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.DerContacta label {
+
+  margin-top: 10px;
+  font-weight: bold;
+
+}
+
+.DerContacta input {
+  margin-bottom: 25px;
+  padding: 5px;
+  border: none;
+  border-bottom: 4px solid rgb(0, 174, 255);
+
+}
+
+.DerContacta textarea {
+  margin-top: 10px;
+  resize: none;
+  padding: 10px;
+  height: 150px;
+  border: 4px solid rgb(0, 174, 255);
+}
+
+#botonContacta {
+  width: 40%;
+  margin-top: 20px;
+  margin-bottom: 55px;
+
+  position: relative;
+  padding: 10px 40px;
+
+
+  border-radius: 3px;
+  font-size: 20px;
+  color: #FFF;
+  text-decoration: none;
+  background-color: rgb(0, 174, 255);
+  border: none;
+  border-bottom: 5px solid rgb(1, 152, 222);
+  text-shadow: 0px -2px rgb(1, 152, 222);
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+
+
+#botonContacta:hover,
+#botonContacta:active {
+  -webkit-transform: translate(0px, 5px);
+  -ms-transform: translate(0px, 5px);
+  transform: translate(0px, 5px);
+  border-bottom: 1px solid rgb(1, 152, 222);
+}
+
+/* modalContacta */
+.contenido p {
+  margin-top: 20px;
+}
+
+.arriba {
+  text-align: center;
+  width: 100%;
+  color: rgb(0, 174, 255);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  padding-top: 100px;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-contenedor {
+  background-color: white;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 1px solid #888;
+  width: 75%;
+  padding: 20px;
+}
+
+.close {
+  background: #ff0000a5;
+
+  color: white;
+  padding: 10px;
+  width: 100px;
+}
+
+.close:hover {
+  cursor: pointer;
+  background: #ff0000;
+}
+
+
+/* Administrador */
+.cerrarSesion  {
+ 
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+}
+
+
+
+
+
+
+/* PARA MOVILES */
+@media only screen and (max-width:576px) {
+
+  /* nav */
+  nav {
+    flex-direction: column;
+
+
+  }
+
+  .navinfo {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .contenedorLogo h2 {
+    color: rgb(0, 174, 255);
+    font-weight: bold;
+  }
+
+  .highMenu:hover .submenu {
+    display: none;
+    position: absolute;
+    width: 42%;
+    background-color: #ff0000;
+    top: 80px;
+
+  }
+
+
+  /* menu */
+  .highMenu:hover .submenu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+  }
+
+  #menu {
+    flex-direction: column;
+    display: none;
+    position: fixed;
+    top: 45px;
+  }
+
+
+  #menu li {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid white;
+  }
+
+
+  #iconomenu {
+    display: block;
+    position: fixed;
+    left: 20px;
+    top: 15px
+  }
+
+  #iconoCerrarMenu {
+    display: none;
+    position: fixed;
+    left: 20px;
+    top: 10px
+  }
+
+  /* index */
+  #texto2inicio {
+    flex-direction: column-reverse;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+
+  .izqInicio {
+    width: 95%;
+    border-radius: 5%;
+    margin-top: 20px;
+  }
+
+
+  #texto3inicio {
+    flex-direction: column;
+
+  }
+
+  .derInicio2 {
+    width: 95%;
+    border-radius: 5%;
+    margin-left: 10px;
+    margin-top: 20px;
+
+  }
+
+  /* CONOCENOS  */
+  .cartas {
+    width: 72%;
+  }
+
+  /* #piscina */
+  #contenedorPiscina {
+
+    flex-direction: column;
+
+  }
+
+  .textPiscina {
+    width: 90%;
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+
+  .slideshow-container {
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 90%;
+  }
+
+  /* contacta */
+  .contenedorContacta {
+    flex-direction: column;
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .izqContacta {
+    width: 100%;
+  }
+
+  /* patrones */
+  #texto2Patrones {
+    flex-direction: column-reverse;
+  }
+
+  .izqPatrones {
+    width: 90%;
+    margin-top: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+
+  #texto3Patrones {
+    flex-direction: column
+  }
+
+  .derPatrones2 {
+    width: 90%;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+  }
+
+  /* pie */
+  footer {
+    flex-direction: column;
+    padding-left: 5%;
+
+  }
+
+  .footerizq {
+
+    width: 100%;
+
+    margin-top: 20px;
+  }
+
+  .footercentro {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .footercentro div {
+    margin-bottom: 15px;
+
+  }
+
+
+}
+
+
+
+
+
+
+@media only screen and (min-width:576px) and (max-width:980px) {
+
+  /* CONOCENOS  */
+  .cartas {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width:981px) {}
+
+
+/* Administrador */
