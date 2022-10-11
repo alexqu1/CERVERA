@@ -104,7 +104,7 @@ $query=mysqli_query($con,$sql);
         <h2 class="tituloNoticia"> NOTICIAS</h2>
       </div>
 
-   
+      <center><iframe style="padding-left:10px" src="https://www.bandomovil.com/web_widget.php?municipio=cerveradelosmontes" width="1200" height="180"> </iframe></center>
 
 
 

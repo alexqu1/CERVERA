@@ -1,3 +1,24 @@
+<?php
+
+include_once '../includes/AntiUrlAdmin.php';
+
+
+
+include("../conexion.php");
+
+
+$con = conectar();
+$sql = "SELECT * FROM alcalde";
+
+$query = mysqli_query($con, $sql);
+
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="es">
 
