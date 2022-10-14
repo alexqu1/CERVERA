@@ -152,12 +152,16 @@ $query = mysqli_query($con, $sql);
       <div id="texto3inicio">
         <div class="izqInicio2">
 
-        <form action="../Crud/Pleno/AñadirPleno.php" method="post" style="width: 200px;">
+        <form action="Crud/Alcalde/AñadirAlcalde.php" method="post" style="width: 200px;">
 
 <input type="text" name="Nombre" id="" placeholder="Titulo">
 <input type="text" name="Descripcion" id="" placeholder="Descripcion">
+<input type="file" name="Archivos" id="" placeholder="Descripcion">
+
 <input type="submit" value="Añadir">
 </form>
+
+
 
 
         
