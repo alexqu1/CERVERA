@@ -117,7 +117,7 @@ $query = mysqli_query($con, $sql);
 
 
         <input type="date" name="Fecha" id="">
-        <input type="file" name="Imagen" id="">
+        <input type="file" name="imagen" id="">
         <input type="submit" value="Añadir">
       </form>
 
@@ -138,13 +138,13 @@ $query = mysqli_query($con, $sql);
 
 
 
-    <div class="imagenNoticiaizq"><img src="../img/inicio/inicio1.jpg" alt="" srcset=""></div>
+    <div class="imagenNoticiaizq"><img src="http://localhost/CERVERA/img/inicio/'. $row['imagen']  .'" alt="" srcset=""></div>
     
     
 
     <div class="noticiaDer">
      
-<div>    <a href="../ ModificarPleno.php?id=' . $row['id']  . ' " rel="noopener noreferrer" class="BotonEditar" >Modificar</a></div>
+<div>    <a href="Crud/Noticias/Modificar_Noticia.php?id=' . $row['id']  . ' " rel="noopener noreferrer" class="BotonEditar" >Modificar</a></div>
 <div>     <a href="Crud/Noticias/Borrar_Noticia.php?id=' . $row['id']  . ' " rel="noopener noreferrer"  class="BotonEliminar">Eliminar</a> </div>
       <h2> ' . $row["Nombre"] . '</h2>
       ' . $row["Descripcion"] . '

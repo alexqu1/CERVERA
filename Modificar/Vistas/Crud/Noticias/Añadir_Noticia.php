@@ -10,11 +10,11 @@ $Descripcion=$_POST['Descripcion'];
 
 $Fecha=$_POST['Fecha'];
 
-$Imagen=$_POST['Imagen'];
+$imagen=$_POST['imagen'];
 
 
 
-$sql="INSERT INTO Noticias(Nombre,Descripcion,Fecha,Imagen) VALUES('$Nombre','$Descripcion' ,'$Fecha' ,'$Imagen')";
+$sql="INSERT INTO noticias(Nombre,Descripcion,Fecha,imagen) VALUES('$Nombre','$Descripcion' ,'$Fecha' ,'$imagen')";
 
 $query=mysqli_query($con,$sql);
 

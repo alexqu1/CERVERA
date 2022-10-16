@@ -14,29 +14,26 @@ $con=conectar();
 $id=$_GET['id'];
 
 if (!isset($_POST['submit'])) {
-$consulta= "select * from descarga_documentos WHERE id='$id'";
+$consulta= "select * from noticias WHERE id='$id'";
 $datos=mysqli_query($con,$consulta) ;
-echo ' <table width=300>
-<tr>
-<td></td><td>nombre</td><td>Descripcion</td><td>Archivos</td>
-</tr>';
+
 while ($fila=mysqli_fetch_array($datos)) {
-echo "<form method='POST' action='ModificarDescarga_Formulario.php' >";
-echo "<tr>";
-echo "<td> <input style='display:none;' type='text' name='id' value='".$fila['id']."'> </td>";
-echo "<td><input type='text' name='Nombre' value='".$fila['Nombre']."'></td>";
-echo "<td><input type='text' name='Descripcion' value='".$fila['Descripcion']."'></td>";
-echo "<td><input type='file' name='Archivos' value='".$fila['Archivos']."'></td> ";
-echo "<td>"," <input type='submit' name='submit' value='Actualizar'>"," </td>";
-echo "</tr>";
+echo "<form method='POST' action='Modificar_Noticia.php' >";
+echo ' <input type="text" name="Nombre" id="" placeholder="TITULO">
+<textarea name="Descripcion" id="" cols="30" rows="10" placeholder="DESCRIPCION DE LA NOTICIA"></textarea>
+
+
+<input type="date" name="Fecha" id="">
+<input type="file" name="imagen" id="">
+<input type="submit" value="Añadir">';
 echo "</form>"; }
-echo "</table>";
+
 }else {
 $I=$_POST["id"];
 $N=$_POST["Nombre"];
 $L=$_POST["Descripcion"];
 $D=$_POST["Archivos"];
-$consulta="UPDATE descarga_documentos SET id='$I' , Nombre='$N', Descripcion='$L', Archivos='$D' WHERE id='$I' ";
+$consulta="UPDATE noticias SET id='$I' , Nombre='$N', Descripcion='$L', Archivos='$D' WHERE id='$I' ";
 $datos=mysqli_query($con,$consulta) ; 
 
 Header("Location: ../../Servicios/Descarga_Formularios.php");
