@@ -10,12 +10,12 @@ $Descripcion=$_POST['Descripcion'];
 
 $Archivos=$_POST['Archivos'];
 
-$sql="INSERT INTO descarga_documentos(Nombre,Descripcion,Archivos) VALUES('$Nombre','$Descripcion' ,'$Archivos')";
+$sql="INSERT INTO alcalde(Nombre,Descripcion,Archivos) VALUES('$Nombre','$Descripcion' ,'$Archivos')";
 
 $query=mysqli_query($con,$sql);
 
 if ($query) {
-    Header("Location: ../../Servicios/Descarga_Formularios.php");
+    Header("Location: ../../Principal.php");
 }
 
 

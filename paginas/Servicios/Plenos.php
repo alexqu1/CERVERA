@@ -31,7 +31,7 @@ INCLUDE("../conexion.php");
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CERVERA DE LOS MONTES</title>
   <link rel="stylesheet" href="http://localhost/CERVERA/css/style.css" />
-  <link rel="icon" type="image/x-icon" href="../../img/inicio/logo.jpg" />
+  <link rel="icon" type="image/x-icon" href="http://localhost/CERVERA/img/inicio/logo.jpg" />
 </head>
 
 

@@ -24,8 +24,8 @@ $user = new User();
 if(isset($_SESSION['user'])){
     //echo "hay sesion";
     $user->setUser($userSession->getCurrentUser());
-     include_once 'vistas/Principal.php';
-    // Header("Location: vistas/Principal.php");
+    //  include_once 'vistas/Principal.php';
+    Header("Location: vistas/Principal.php");
 
 
 }else if(isset($_POST['username']) && isset($_POST['password'])){
@@ -39,9 +39,9 @@ if(isset($_SESSION['user'])){
         $userSession->setCurrentUser($userForm);
         $user->setUser($userForm);
 
-        // Header("Location: vistas/Principal.php");
+         Header("Location: vistas/Principal.php");
 
-         include_once 'vistas/Principal.php';
+        //  include_once 'vistas/Principal.php';
     }else{
         //echo "No existe el usuario";
         $errorLogin = "Nombre de usuario y/o password incorrecto";

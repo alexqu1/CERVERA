@@ -1,3 +1,24 @@
+<?php
+
+include_once '../includes/AntiUrlAdmin.php';
+
+
+
+include("../conexion.php");
+
+
+$con = conectar();
+$sql = "SELECT * FROM alcalde";
+
+$query = mysqli_query($con, $sql);
+
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -131,12 +152,16 @@
       <div id="texto3inicio">
         <div class="izqInicio2">
 
-        <form action="../Crud/Pleno/AñadirPleno.php" method="post" style="width: 200px;">
+        <form action="Crud/Alcalde/AñadirAlcalde.php" method="post" style="width: 200px;">
 
 <input type="text" name="Nombre" id="" placeholder="Titulo">
 <input type="text" name="Descripcion" id="" placeholder="Descripcion">
+<input type="file" name="Archivos" id="" placeholder="Descripcion">
+
 <input type="submit" value="Añadir">
 </form>
+
+
 
 
         

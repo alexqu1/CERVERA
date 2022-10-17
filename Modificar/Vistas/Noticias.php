@@ -110,6 +110,9 @@ $query = mysqli_query($con, $sql);
         <h2 class="tituloNoticia"> NOTICIAS</h2>
       </div>
 
+      <center><iframe src="https://www.bandomovil.com/web_widget.php?municipio=cerveradelosmontes" width="300" height="450"> </iframe></center>
+
+
       <form action="Crud/Noticias/Añadir_Noticia.php" method="post" style="width: 200px;">
 
         <input type="text" name="Nombre" id="" placeholder="TITULO">
