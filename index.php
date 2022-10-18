@@ -124,12 +124,27 @@
 
       <div id="texto3inicio">
         <div class="izqInicio2">
-          <h2>Nuestro alcalde de Cervera de los Monte Pedro Perez Perez</h2>
-          <p>
-           
-        Alcalde de cervera de los montes desde hace 12 años ñ
-       
-          </p>
+        <?php
+
+
+
+while ($row = mysqli_fetch_array($query)) {
+  $arrayDatos[] = $row;
+  echo '
+
+  <h2>' .  $row["Nombre"] . '</h2>
+  <p>
+   
+  ' .  $row["Descripcion"] . '
+
+  </p>
+
+
+
+';
+}
+?>
+
         </div>
 
         <div class="derInicio2"><img src="" alt="" srcset=""></div>

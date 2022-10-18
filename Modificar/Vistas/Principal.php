@@ -70,26 +70,26 @@ $query = mysqli_query($con, $sql);
           <li style="border-left:0px ;"> <a href="#"> INICIO</a></li>
           <li class="highMenu"><a href="#">CONOCENOS<span class="uve">v</span></a>
             <ul class="submenu">
-              <li  class="Lisubmenu" ><a href="Vistas/Conocenos/Monumento.php">MONUMENTOS</a></li>
-              <li class="Lisubmenu"><a href="Vistas/Conocenos/Patrones.php">PATRONES</a></li>
-              <li class="Lisubmenu"><a href="Vistas/Conocenos/Piscina.php">PISCINA MUNICIPAL</a></li>
-              <li class="Lisubmenu"><a href="Vistas/Conocenos/Gastronomia.php">GASTRONOMIA</a></li>
-              <li class="Lisubmenu"><a href="Vistas/Conocenos/ZonasComunes.php">ZONAS COMUNES</a></li>
+              <li  class="Lisubmenu" ><a href="Conocenos/Monumento.php">MONUMENTOS</a></li>
+              <li class="Lisubmenu"><a href="Conocenos/Patrones.php">PATRONES</a></li>
+              <li class="Lisubmenu"><a href="Conocenos/Piscina.php">PISCINA MUNICIPAL</a></li>
+              <li class="Lisubmenu"><a href="Conocenos/Gastronomia.php">GASTRONOMIA</a></li>
+              <li class="Lisubmenu"><a href="Conocenos/ZonasComunes.php">ZONAS COMUNES</a></li>
             </ul>
     </li>
 
     <li class="highMenu"><a href="#">SERVICIOS<span class="uve">v</span></a>
       <ul class="submenu">
-        <li  class="Lisubmenu" ><a href="Vistas/Servicios/Plenos.php">PLENOS</a></li>
-        <li class="Lisubmenu"><a href="Vistas/Servicios/Empleo.php">EMPLEO</a></li>
-        <li class="Lisubmenu"><a href="Vistas/Servicios/Descarga_Formularios.php">DESCARGA DOCUMENTOS </a></li>
+        <li  class="Lisubmenu" ><a href="Servicios/Plenos.php">PLENOS</a></li>
+        <li class="Lisubmenu"><a href="Servicios/Empleo.php">EMPLEO</a></li>
+        <li class="Lisubmenu"><a href="Servicios/Descarga_Formularios.php">DESCARGA DOCUMENTOS </a></li>
 
       </ul>
 </li>
 
 
-    <li><a href="Vistas/Noticias.php">NOTICIAS</a></li>
-    <li><a href="Vistas/Contacta.php">CONTACTA</a></li>
+    <li><a href="Noticias.php">NOTICIAS</a></li>
+    <li><a href="Contacta.php">CONTACTA</a></li>
     </ul>
 
 
@@ -155,7 +155,7 @@ $query = mysqli_query($con, $sql);
         <form action="Crud/Alcalde/AñadirAlcalde.php" method="post" style="width: 200px;">
 
 <input type="text" name="Nombre" id="" placeholder="Titulo">
-<input type="text" name="Descripcion" id="" placeholder="Descripcion">
+<textarea type="text" name="Descripcion" id="" placeholder="Descripcion"></textarea>
 <input type="file" name="Archivos" id="" placeholder="Descripcion">
 
 <input type="submit" value="Añadir">
@@ -173,7 +173,6 @@ while ($row = mysqli_fetch_array($query)) {
   $arrayDatos[] = $row;
   echo '
 
-
   <h2>' .  $row["Nombre"] . '</h2>
   <p>
    
@@ -181,21 +180,7 @@ while ($row = mysqli_fetch_array($query)) {
 
   </p>
 
-<div class="cajaPleno">
-<div class="tituloCajaPleno">
-<p> ' .  $row["Nombre"] . ' </p>
-</div>
 
-<a href="../Crud/Pleno/ModificarPleno.php?id=' . $row['id']  . ' " rel="noopener noreferrer" class="BotonEditar" >Modificar</a>
-<a href="../Crud/Pleno/BorrarPleno.php?id=' . $row['id']  . ' " rel="noopener noreferrer"  class="BotonEliminar">Eliminar</a>
-
-<div class="pdfCajaPleno">
-<a href="' .  $row["Archivos"] . ' " rel="noopener noreferrer">
-
-<img src="http://localhost/CERVERA/img/iconos/pdf.png" alt="" srcset=""></a>
-</div>
-
-</div>
 
 ';
 }
