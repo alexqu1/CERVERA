@@ -152,11 +152,11 @@ $query = mysqli_query($con, $sql);
       <div id="texto3inicio">
         <div class="izqInicio2">
 
-        <form action="Crud/Alcalde/AñadirAlcalde.php" method="post" style="width: 200px;">
+        <form enctype="multipart/form-data" action="Crud/Alcalde/AñadirAlcalde.php"  method="POST" style="width: 200px;">
 
 <input type="text" name="Nombre" id="" placeholder="Titulo">
 <textarea type="text" name="Descripcion" id="" placeholder="Descripcion"></textarea>
-<input type="file" name="Archivos" id="" placeholder="Descripcion">
+<input name="Archivos" type="file" name="Archivos" id="">
 
 <input type="submit" value="Añadir">
 </form>
@@ -181,58 +181,20 @@ while ($row = mysqli_fetch_array($query)) {
   </p>
 
 
+  </div>
+
+  <div class="derInicio2"><img src=http://localhost/CERVERA/img/Files/'.  $row["Archivos"] .' alt="" srcset=""></div>
+  </div>
 
 ';
 }
+
+include_once("../../footer.php")
 ?>
 
 
 
-        </div>
 
-        <div class="derInicio2"></div>
-      </div>
-
-      <footer>
-        <div class="footerizq">
-          <i>
-            <h2>HORARIO</h2>
-          </i>
-          <p>LUNES-VIERNES : <b> 9:00 - 14:00</b> </p>
-          <br>
-          <p>SABADO-DOMINGO : <b>C E R R A D O</b></p>
-        </div>
-        <div class="footercentro">
-          <i>
-            <h2>CONTACTO</h2>
-            
-            <div>
-              <img src="http://localhost/CERVERA/img/iconos/telefono.png" alt="" srcset="" />
-              925-875-501
-            </div>
-            <div>
-              <img src="http://localhost/CERVERA/img/iconos/gmail.png" alt="" srcset="" /> ayuntcervera@hotmail.com
-
-            </div>
-            <div>
-              <img src="http://localhost/CERVERA/img/iconos/ubicacion.png" alt="" srcset="" /> Plaza Constitución 1
-              45637 Cervera de los Montes (Toledo)
-            </div>
-        </div>
-
-
-        <div class="footerder">
-          <i>
-            <h2>REDES SOCIALES</h2>
-          </i>
-          <div class="conjuntoRedes">
-            <a href="https://m.facebook.com/Cervera-de-los-Montes-en-vivo-223288074676712/?__tn__=C-R" target="_blank"> <img src="img/iconos/facebook.png" alt=""></a>
-            <a href="" target="_blank"> <img src="http://localhost/CERVERA/img/iconos/gmail2.png" alt=""></a>
-            <a href="" target="_blank"><img src="http://localhost/CERVERA/img/iconos/instagram.png"alt=""> </a>
-          </div>
-        </div>
-
-      </footer>
     </div>
     <!-- fin contendor -->
   </div>

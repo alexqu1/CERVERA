@@ -122,6 +122,11 @@ while($row = mysqli_fetch_array($query)){
     </div> 
     ';
   }
+
+
+  include_once("../../../footer.php")
+
+
 ?>
 
 </div>

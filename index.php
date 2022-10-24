@@ -1,3 +1,26 @@
+<?php
+
+
+
+
+INCLUDE("paginas/conexion.php");
+
+
+$con=conectar();
+
+// $sql = "SELECT * FROM `alcalde` where id=`1` ";
+
+$sql = "SELECT * FROM `alcalde` WHERE id=\"1\";";
+
+$query=mysqli_query($con,$sql);
+
+  $row=mysqli_fetch_array($query);
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -124,14 +147,13 @@
 
       <div id="texto3inicio">
         <div class="izqInicio2">
+
+
         <?php
 
 
-
-while ($row = mysqli_fetch_array($query)) {
-  $arrayDatos[] = $row;
   echo '
-
+ 
   <h2>' .  $row["Nombre"] . '</h2>
   <p>
    
@@ -139,16 +161,18 @@ while ($row = mysqli_fetch_array($query)) {
 
   </p>
 
+  </div>
 
+        <div class="derInicio2"><img src=img/Files/'.  $row["Archivos"] .' alt="" srcset=""></div>
+      </div>
 
 ';
-}
+
 ?>
 
-        </div>
 
-        <div class="derInicio2"><img src="" alt="" srcset=""></div>
-      </div>
+
+      
 
       <footer>
         <div class="footerizq">

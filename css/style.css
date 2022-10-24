@@ -253,8 +253,8 @@ footer h2 {
 .derInicio2 {
   width: 25%;
   height: 400px;
-  background: url(../img/inicio/Alcalde.jpeg);
-  background-size: cover;
+  
+ 
 
   border-radius: 10px 0px 0px 10px;
 }
@@ -506,6 +506,11 @@ footer h2 {
 
 
 /* noticias */
+
+.Divbandomovil{
+  
+}
+
 .cajaTituloNoticia {
   min-height: 350px;
   width: 100%;
@@ -557,6 +562,7 @@ footer h2 {
   font-weight: bold;
   font-style: italic
 }
+
 
 
 /* contacta */

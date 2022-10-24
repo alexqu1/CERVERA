@@ -140,6 +140,9 @@ $query = mysqli_query($con, $sql);
     
     ';
         }
+
+    include_once("../../../footer.php")
+
         ?>
 
             </div>

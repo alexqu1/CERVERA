@@ -110,7 +110,7 @@ $query = mysqli_query($con, $sql);
         <h2 class="tituloNoticia"> NOTICIAS</h2>
       </div>
 
-      <center><iframe src="https://www.bandomovil.com/web_widget.php?municipio=cerveradelosmontes" width="300" height="450"> </iframe></center>
+      <center><iframe style="padding-left:10px" src="https://www.bandomovil.com/web_widget.php?municipio=cerveradelosmontes" width="1200" height="680"> </iframe></center>
 
 
       <form action="Crud/Noticias/Añadir_Noticia.php" method="post" style="width: 200px;">
@@ -120,7 +120,7 @@ $query = mysqli_query($con, $sql);
 
 
         <input type="date" name="Fecha" id="">
-        <input type="file" name="imagen" id="">
+        <input type="file" name="Archivos" id="">
         <input type="submit" value="Añadir">
       </form>
 
@@ -141,7 +141,7 @@ $query = mysqli_query($con, $sql);
 
 
 
-    <div class="imagenNoticiaizq"><img src="http://localhost/CERVERA/img/inicio/'. $row['imagen']  .'" alt="" srcset=""></div>
+    <div class="imagenNoticiaizq"><img src="http://localhost/CERVERA/img/Files/'. $row['Archivos']  .'" alt="" srcset=""></div>
     
     
 
@@ -164,48 +164,12 @@ $query = mysqli_query($con, $sql);
  
    ';
       }
+      
+      
+      include_once("../../footer.php")
       ?>
 
-      <footer>
-        <div class="footerizq">
-          <i>
-            <h2>HORARIO</h2>
-          </i>
-          <p>LUNES-VIERNES : <b> 9:00 - 14:00</b> </p>
-          <br>
-          <p>SABADO-DOMINGO : <b>C E R R A D O</b></p>
-        </div>
-        <div class="footercentro">
-          <i>
-            <h2>CONTACTO</h2>
-
-            <div>
-              <img src="http://localhost/CERVERA/img/iconos/telefono.png" alt="" srcset="" />
-              925-875-501
-            </div>
-            <div>
-              <img src="http://localhost/CERVERA/img/iconos/gmail.png" alt="" srcset="" /> ayuntcervera@hotmail.com
-
-            </div>
-            <div>
-              <img src="http://localhost/CERVERA/img/iconos/ubicacion.png" alt="" srcset="" /> Plaza Constitución 1
-              45637 Cervera de los Montes (Toledo)
-            </div>
-        </div>
-
-
-        <div class="footerder">
-          <i>
-            <h2>REDES SOCIALES</h2>
-          </i>
-          <div class="conjuntoRedes">
-            <a href="" target="_blank"> <img src="http://localhost/CERVERA/img/iconos/facebook.png" alt=""></a>
-            <a href="" target="_blank"> <img src="http://localhost/CERVERA/img/iconos/gmail2.png" alt=""></a>
-            <a href="" target="_blank"><img src="http://localhost/CERVERA/img/iconos/instagram.png" alt=""> </a>
-          </div>
-        </div>
-
-      </footer>
+    
     </div>
     <!-- fin contendor -->
   </div>
