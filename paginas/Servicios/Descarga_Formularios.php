@@ -67,7 +67,7 @@ while($row = mysqli_fetch_array($query)){
 
    
     <div class="pdfCajaPleno">
-      <a href="' .  $row["Archivos"] . ' " target="_blank" rel="noopener noreferrer">
+      <a href="http://localhost/CERVERA/img/Files/' .  $row["Archivos"] . ' " target="_blank" rel="noopener noreferrer">
         <img src="../../img/iconos/pdf.png" alt="" srcset=""></a>
     </div>
   

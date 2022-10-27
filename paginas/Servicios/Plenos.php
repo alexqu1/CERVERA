@@ -1,8 +1,4 @@
 <?php
-        
-        
-
-
 
 INCLUDE("../conexion.php");
 
@@ -10,14 +6,6 @@ INCLUDE("../conexion.php");
  $sql="SELECT * FROM pleno order by id desc" ;
  
  $query=mysqli_query($con,$sql);
- 
-  
- 
- 
-
-
-
-
 
 ?>
 
@@ -30,7 +18,7 @@ INCLUDE("../conexion.php");
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CERVERA DE LOS MONTES</title>
-  <link rel="stylesheet" href="http://localhost/CERVERA/css/style.css" />
+  <?php echo " <link rel='stylesheet' href='.$root.css/style.css' />?>" ?>
   <link rel="icon" type="image/x-icon" href="http://localhost/CERVERA/img/inicio/logo.jpg" />
 </head>
 
@@ -71,26 +59,15 @@ while($row = mysqli_fetch_array($query)){
    
 
     <div class="pdfCajaPleno">
-      <a href="' .  $row["Archivos"] . ' " rel="noopener noreferrer">
+      <a href="http://localhost/CERVERA/img/Files/'.$row["Archivos"].' " rel="noopener noreferrer">
        
       <img src="../../img/iconos/pdf.png" alt="" srcset=""></a>
     </div>
-    
     </div>
-    
-    ';
-
-
-    
+    ';  
   }
 ?>
-
 </div>
-
-
-
-
-
     </div>
     <!-- fin contendor -->
   </div>
