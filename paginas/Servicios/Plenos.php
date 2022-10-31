@@ -33,8 +33,6 @@ INCLUDE("../conexion.php");
   <?php
     include_once("../../header.php")
 ?>
-
-
   </header>
 
 

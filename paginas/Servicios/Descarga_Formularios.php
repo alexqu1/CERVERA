@@ -10,11 +10,6 @@ $sql="SELECT * FROM descarga_documentos order by id desc" ;
 
 $query=mysqli_query($con,$sql);
 
-
-
-
-
-
         ?>
 
 <!DOCTYPE html>
@@ -32,8 +27,6 @@ $query=mysqli_query($con,$sql);
 
 
 <body>
- 
-
   <div class="contenedorCentral">
 
     <div id="contenedor">
@@ -47,8 +40,6 @@ $query=mysqli_query($con,$sql);
 
 <div id="contenedorPleno">
 <h2>DESCARGA FORMULARIO</h2>
-
-
 
 
 <?php
