@@ -55,42 +55,12 @@ $query=mysqli_query($con,$sql);
       </div>
 
       <div class="Divbandomovil">
-      <iframe style="padding-left:10px" src="https://www.bandomovil.com/web_widget.php?municipio=cerveradelosmontes" width="1200" height="680"> </iframe>
+      <iframe  src="https://www.bandomovil.com/web_widget.php?municipio=cerveradelosmontes" width="1200" height="680"> </iframe>
       </div>
 
 
 
-      <?php
 
-
-
-while($row = mysqli_fetch_array($query)){
-     $arrayDatos[] = $row;
-    echo'
-    <div class="cajaNoticia">
-    <div class="imagenNoticiaizq"><img src="../img/'. $row["Archivos"] .'" alt="" srcset=""></div>
-  
-
-    <div class="noticiaDer">
-     
-
-      <h2> ' . $row["Nombre"] . '</h2>
-      ' . $row["Descripcion"] . '
-      <div class="fechaNoticia">' . $row["Fecha"] . '</div>
-    </div>
-
-    <br>
-
-
-  
-
-
-   </div>
- 
-   ';
-    
-  }
-?>
     
     <?php
     include_once("../footer.php")

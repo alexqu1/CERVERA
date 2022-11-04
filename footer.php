@@ -40,9 +40,8 @@
             <h2>REDES SOCIALES</h2>
           </i>
           <div class="conjuntoRedes">
-            <a href="" target="_blank"> <img src="http://localhost/CERVERA/img/iconos/facebook.png" alt=""></a>
-            <a href="" target="_blank"> <img src="http://localhost/CERVERA/img/iconos/gmail2.png" alt=""></a>
-            <a href="" target="_blank"><img src="http://localhost/CERVERA/img/iconos/instagram.png"alt=""> </a>
+            <a href="https://www.facebook.com/ayuntamientocervera.delosmontes.94/" target="_blank"> <img src="http://localhost/CERVERA/img/iconos/facebook.png" alt=""></a>
+            <a href="mailto:ayuntcervera@hotmail.com" target="_blank"> <img src="http://localhost/CERVERA/img/iconos/gmail2.png" alt=""></a>
           </div>
         </div>
 
