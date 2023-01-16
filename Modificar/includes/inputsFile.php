@@ -1,7 +1,12 @@
+
 <?php
 
-$target_dir = "../../img/Files/"; //directorio en el que se subira
+
+$target_dir = "../../../../img/Files/"; //directorio en el que se subira
 $target_file = $target_dir . basename($_FILES["Archivos"]["name"]);//se añade el directorio y el nombre del archivo
+
+
+
 $uploadOk = 1;//se añade un valor determinado en 1
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 // Comprueba si el archivo de imagen es una imagen real o una imagen falsa
@@ -21,17 +26,18 @@ if (file_exists($target_file)) {
     $uploadOk = 0;//si existe lanza un valor en 0
 }
 // Comprueba el peso
-if ($_FILES["Archivos"]["size"] > 500000) {
-    echo "Perdon pero el archivo es muy pesado";
-    $uploadOk = 0;
-}
+// if ($_FILES["Archivos"]["size"] > 50000) {
+//     echo "Perdon pero el archivo es muy pesado";
+//     $uploadOk = 0;
+// }
 //Comprueba si $ uploadOk se establece en 0 por un error
 if ($uploadOk == 0) {
     echo "Perdon, pero el archivo no se subio";
 // si todo está bien, intenta subir el archivo
 } else {
-    if (move_uploaded_file($_FILES["Archivos"]["tmp_name"], $target_file)) {
-        echo "El archivo ". basename( $_FILES["Archivos"]["name"]). " Se subio correctamente";
+    //if(move_uploaded_file($_FILES['Archivos']['tmp_name'],$target_dir.$name)){
+    if (move_uploaded_file($_FILES["Archivos"]["tmp_name"],$target_file)) {
+        echo "El archivo ". basename($_FILES["Archivos"]["name"]). " Se subio correctamente";
     } else {
         echo "Error al cargar el archivo";
     }

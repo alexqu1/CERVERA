@@ -1,18 +1,12 @@
 <?php
    include_once '../../includes/AntiUrlAdmin.php';
      
-
         INCLUDE("../../conexion.php");
         
 $con=conectar();
 $sql="SELECT * FROM descarga_documentos order by id desc" ;
 
 $query=mysqli_query($con,$sql);
-
-
-
-
-
 
         ?>
 
@@ -51,8 +45,8 @@ $query=mysqli_query($con,$sql);
             <div id="contenedorPleno">
                 <h2>DESCARGA FORMULARIO</h2>
 
-                <form action="../Crud/Descarga_Formulario/AñadirDescarga_Formulario.php" method="post"
-                    style="width: 200px;">
+                <form action="../Crud/Descarga_Formulario/AñadirDescarga_Formulario.php" method="post" enctype="multipart/form-data"
+                    style="width: 200px;" >
 
                     <input type="text" name="Nombre" id="" placeholder="Titulo">
                     <input type="text" name="Descripcion" id="" placeholder="Descripcion">
@@ -75,7 +69,7 @@ while($row = mysqli_fetch_array($query)){
     <a href="../Crud/Descarga_Formulario/BorrarDescarga_Formulario.php?id=' .$row['id']  . ' " rel="noopener noreferrer"  class="BotonEliminar">Eliminar</a>
 
     <div class="pdfCajaPleno">
-      <a href="' .  $row["Archivos"] . ' " target="_blank" rel="noopener noreferrer">
+      <a href="http://localhost/CERVERA/img/Files/' .  $row["Archivos"] . ' " target="_blank" rel="noopener noreferrer">
         <img src="http://localhost/CERVERA/img/iconos/pdf.png" alt="" srcset=""></a>
     </div>
   
@@ -83,17 +77,9 @@ while($row = mysqli_fetch_array($query)){
     ';
   }
 ?>
-
-
-
             </div>
 
-
-
-
         </div>
-
-
 
         <?php
     include_once("../../../footer.php")

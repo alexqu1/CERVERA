@@ -2,26 +2,15 @@
 
 include_once '../includes/AntiUrlAdmin.php';
 
-
-
 include("../conexion.php");
-
 
 $con = conectar();
 $sql = "SELECT * FROM alcalde";
 
 $query = mysqli_query($con, $sql);
-
-
-
 ?>
-
-
-
-
 <!DOCTYPE html>
 <html lang="es">
-
 
 <head>
   <meta charset="UTF-8" />
@@ -48,8 +37,6 @@ $query = mysqli_query($con, $sql);
  include("../headerAdmin.php")
 ?>    
         </header>
-
-   
 
       <div id="texto1inicio">
 
@@ -80,7 +67,7 @@ $query = mysqli_query($con, $sql);
             en tiempo de Felipe IV
           </p>
 
-          <br />
+          <br/>
      
 
           <p>
@@ -109,7 +96,7 @@ $query = mysqli_query($con, $sql);
 
 <input type="text" name="Nombre" id="" placeholder="Titulo">
 <textarea type="text" name="Descripcion" id="" placeholder="Descripcion"></textarea>
-<input name="Archivos" type="file" name="Archivos" id="">
+<input name="Archivos" type="file"  id="">
 
 <input type="submit" value="Añadir">
 </form>
@@ -133,7 +120,6 @@ while ($row = mysqli_fetch_array($query)) {
 
   </p>
 
-
   </div>
 
   <div class="derInicio2"><img src=http://localhost/CERVERA/img/Files/'.  $row["Archivos"] .' alt="" srcset=""></div>
@@ -144,10 +130,6 @@ while ($row = mysqli_fetch_array($query)) {
 
 include_once("../../footer.php")
 ?>
-
-
-
-
     </div>
     <!-- fin contendor -->
   </div>

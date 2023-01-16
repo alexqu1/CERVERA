@@ -57,11 +57,6 @@ $query=mysqli_query($con,$sql);
       <div class="Divbandomovil">
       <iframe  src="https://www.bandomovil.com/web_widget.php?municipio=cerveradelosmontes" width="1200" height="680"> </iframe>
       </div>
-
-
-
-
-    
     <?php
     include_once("../footer.php")
 ?>

@@ -52,9 +52,19 @@
         España</div>
     </div>
 
- 
     <div class="cartas">
-      <div class="CajaCarta"><img src="../../img/ZonasComunes/" class="imagenCarta" alt="" srcset=""></div>
+      <div class="CajaCarta"><img src="../../img/ZonasComunes/bibioteca/biblioteca2.jpeg"  class="imagenCarta" alt="" srcset=""></div>
+      <div class="tituloCarta">BIBLIOTECA</div>
+      <div class="descripcionCarta">Cervera de los Montes cuenta con 2 parques infantiles</div>
+      <div class="localizacion"> <img src="../../img/ubicacion.png" alt="" srcset="" />carretera talavera, n8
+        45637 Cervera de los Montes
+        Toledo
+        España</div>
+    </div>
+
+
+    <div class="cartas">
+      <div class="CajaCarta"><img src="../../img/ZonasComunes/ParqueAncianos/ParqueAncianos.jpeg" class="imagenCarta" alt="" srcset=""></div>
       <div class="tituloCarta">PARQUE DE MAQUINAS DE EJERCICO</div>
       <div class="descripcionCarta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum corrupti hic expedita repellat obcaecati optio nemo aliquam, libero quisquam debitis 
         vero officiis molestiae sit illo fugit adipisci, quia incidunt voluptates?</div>
@@ -74,17 +84,23 @@
         España</div>
     </div>
 
-
     <div class="cartas">
-      <div class="CajaCarta"><img src="../../img/ZonasComunes/bibioteca/biblioteca2.jpeg"  class="imagenCarta" alt="" srcset=""></div>
-      <div class="tituloCarta">BIBLIOTECA</div>
-      <div class="descripcionCarta">Cervera de los Montes cuenta con 2 parques infantiles</div>
+      <div class="CajaCarta"><img src="../../img/ZonasComunes/Parque2/ParqueCarretera1.jpeg" class="imagenCarta" alt="" srcset=""></div>
+      <div class="tituloCarta">PARQUE DE MAQUINAS DE EJERCICO</div>
+      <div class="descripcionCarta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum corrupti hic expedita repellat obcaecati optio nemo aliquam, libero quisquam debitis 
+        vero officiis molestiae sit illo fugit adipisci, quia incidunt voluptates?</div>
       <div class="localizacion"> <img src="../../img/ubicacion.png" alt="" srcset="" />carretera talavera, n8
         45637 Cervera de los Montes
         Toledo
         España</div>
     </div>
 
+
+
+   
+
+    
+   
 
   </div>
 

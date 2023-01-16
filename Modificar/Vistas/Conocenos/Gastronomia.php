@@ -52,29 +52,6 @@
         España</div>
     </div>
 
-    <div class="cartas">
-      <div class="CajaCarta"><img src="../../img/Gastronomia/barSanRoque.png" class="imagenCarta" alt="" srcset=""></div>
-      <div class="tituloCarta">BAR SAN ROQUE</div>
-      <div class="descripcionCarta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum corrupti hic expedita repellat obcaecati optio nemo aliquam, libero quisquam debitis 
-        vero officiis molestiae sit illo fugit adipisci, quia incidunt voluptates?</div>
-      <div class="localizacion"> <img src="../../img/iconos/ubicacion.png" alt="" srcset="" />carretera talavera, n8
-        45637 Cervera de los Montes
-        Toledo
-        España</div>
-    </div>
-
-    <div class="cartas">
-      <div class="CajaCarta"><img src="../../img/Gastronomia/barSanRoque.png" class="imagenCarta" alt="" srcset=""></div>
-      <div class="tituloCarta">BAR SAN ROQUE</div>
-      <div class="descripcionCarta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum corrupti hic expedita repellat obcaecati optio nemo aliquam, libero quisquam debitis 
-        vero officiis molestiae sit illo fugit adipisci, quia incidunt voluptates?</div>
-      <div class="localizacion"> <img src="../../img/iconos/ubicacion.png" alt="" srcset="" />carretera talavera, n8
-        45637 Cervera de los Montes
-        Toledo
-        España</div>
-    </div>
- 
-
   </div>
 
 

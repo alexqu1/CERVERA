@@ -3,23 +3,24 @@ INCLUDE("../../../conexion.php");
 
 $con = conectar();
 
+include_once '../../../includes/inputsFile.php';
+
 
 $Nombre=$_POST['Nombre'];
 
 $Descripcion=$_POST['Descripcion'];
 
-$Archivos=$_POST['Archivos'];
+$Archivos=$_FILES['Archivos']['name'];
 
 $sql="INSERT INTO descarga_documentos(Nombre,Descripcion,Archivos) VALUES('$Nombre','$Descripcion' ,'$Archivos')";
 
 $query=mysqli_query($con,$sql);
 
-include_once '../../../includes/inputsFile.php';
-
 
 if ($query) {
-    Header("Location: ../../Servicios/Descarga_Formularios.php");
+    // Header("Location: ../../Servicios/Descarga_Formularios.php");
 }
 
 
 ?>
+
